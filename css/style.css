@@ -59,18 +59,22 @@ img {
 }
 
 /** Header **/
+/*
 .webp .header {
   background-image: url(../img/banner.webp);
 }
 .no-webp .header {
   background-image: url(../img/banner.jpg);
 }
+*/ 
 .header {
+  background-image: url(../img/banner.jpg);
   height: 60rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; /* para centrar la imagen horizontal y vertical */
 }
+
 .header__texto {
  text-align: center;
  color: var(--blanco);
@@ -158,4 +162,28 @@ img {
 }
 .boton--secundario {
   background-color: var(--primario);
+}
+
+.cursos {
+  list-style: none;
+}
+
+.widget-curso {
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
+}
+.widget-curso:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+.widget-curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+}
+.widget-curso__info {
+  font-weight: normal;
+}
+.widget-curso__label,
+.widget-curso__info {
+  font-size: 2rem;
 }
